@@ -1,230 +1,43 @@
-.header h4 {
-    color: rgb(36, 3, 134);
-    font-weight: 700;
-    font-size: 50px;
-}
-@media screen and (min-width: 720px) {
-  .section{
-    padding: 7rem 0 2rem;
-  }
-  .header h4 {
-    font-size: 70px;
-  }
+
+
+
+
+
+
+.welcome {
+  text-align: center;
+  color: blue;
+  margin-top: 15px;
+  font-size: 18px;
 }
 .container {
-  background-color: silver;
-  margin: 50px auto;
-  border-radius: 20px;
-  padding: 10px 20px;
-  border: 2px;
-  width: 250px;
-  box-shadow: 10px 10px 20px black;
-  transition: all 400ms ease-out;
-}
-@media screen and (min-width: 420px) {
-  .container {
-      width: 285px;
-  }
-}
-@media screen and (min-width: 520px) {
-  .container {
-      width: 360px;
-  }
-}
-@media screen and (min-width: 650px) {
-  .container {
-      width: 440px;
-  }
-}
-@media screen and (min-width: 800px) {
-  .container {
-      width: 500px;
-  }
-}
-@media screen and (min-width: 1100px) {
-  .container {
-      width: 700px;
-  }
-}
-.container:hover{
-  border: 3px;
-box-shadow: 0px 35px 40px black;
-transform: translateY(-7%);
-}   
-.step {
   text-align: center;
+  display: flex;
+  margin: 0 auto;
+  place-content: center;
   align-items: center;
+  justify-content: center;
 }
-.step h1 {
-  font-size: 25px;
-}
-@media(min-width: 600px) {
-  .step h1 {
-      font-size: 30px;
-  }
-}
-@media(min-width: 800px) {
-  .step h1 {
-      font-size: 40px;
-  }
-}
-@media(min-width: 999px) {
-  .step h1 {
-      font-size: 50px;
-  }
-}
-
-.step h2 {
+.container .div-1 h2 {
+  color: rgba(255, 0, 0, 0.851);
+  margin-top: 6px;
   font-size: 21px;
-  color: blue;
 }
-@media(min-width: 600px) {
-  .step h2 {
-      font-size: 26px;
-  }
+.container .div-1 h3 {
+  font-size: 18px;
 }
-@media(min-width: 800px) {
-  .step h2 {
-      font-size: 35px;
-  }
-}
-@media(min-width: 999px) {
-  .step h2 {
-      font-size: 40px;
-  }
-}
-@media(min-width: 1100px) {
-  .step h2 {
-      font-size: 50px;
-  }
-}
-.step h3 {
-  color: blue;
-  font-size: 22px;
-}
-@media(min-width: 600px) {
-  .step h3 {
-      font-size: 25px;
-  }
-}
-@media(min-width: 800px) {
-  .step h3 {
-      font-size: 28px;
-  }
-}
-@media(min-width: 999px) {
-  .step h3 {
-      font-size: 33px;
-  }
-}
-@media(min-width: 1100px) {
-  .step h3 {
-      font-size: 37px;
-  }
-}
-.step p {
+.container .div-1 p {
   font-size: 15px;
 }
-@media(min-width: 600px) {
-  .step p {
-      font-size: 18px;
-  }
-}
-@media(min-width: 800px) {
-  .step p {
-      font-size: 21px;
-  }
-}
-@media(min-width: 999px) {
-  .step p {
-      font-size: 25px;
-  }
-}
-@media(min-width: 1100px) {
-  .step p {
-      font-size: 29px;
-  }
-}
 
-.step a {
-  color: blue;
-}
-.button {
-  cursor: pointer;
-  background-color: silver;
-  margin: 0px 5px;
-  border-radius: 20px;
-  padding: 0px 5px;
-  border: 10px;
-  min-width: 150px;
-  min-height: 120px;
-  box-shadow: 4px 4px 12px blue;
-  display: flex;
-  transition: all 400ms ease-out;
-}
-.button:hover{
-  box-shadow: 0px 18px 22px blue;
-  transform: translateY(-6%);
-}  
-
-.container .step .send {
-  margin-top: 20px;
-  width: 130px;
-  height: 110px;
-  background-color: gold;
-  cursor: pointer;
-}
-@media(min-width: 600px) {
-  .container .step .send {
-      width: 140px;
-      height: 130px;
-  }
-}
-@media(min-width: 800px) {
-  .container .step .send {
-      width: 165px;
-      height: 140px;
-  }
-}
-@media(min-width: 999px) {
-  .container .step .send {
-      width: 190px;
-      height: 160px;
-  }
-}
-@media(min-width: 1100px) {
-  .container .step .send {
-      width: 200px;
-      height: 180px;
-  }
-}
-
-.container .step .send:hover {
-  background-color: var(--scarlet);
-}
-
-.container .step .send h3 {
-  font-size: 30px;
-  text-align: center;
-  align-items: center;
-}
-@media(min-width: 600px) {
-  .container .step .send h3 {
-      font-size: 40px; 
-  }
-}
-@media(min-width: 800px) {
-  .container .step .send h3 {
-      font-size: 50px;
-  }
-}
-@media(min-width: 999px) {
-  .container .step .send h3 {
-      font-size: 60px;
-  }
-}
-@media(min-width: 1100px) {
-  .container .step .send h3 {
-      font-size: 70px;
-  }
+.div-1 {
+  border: 3px solid rgba(61, 12, 209, 0.411);
+  border-radius: 16px;
+  box-shadow:0 4px 30px rgba(0, 0,0, 0.1);
+  backdrop-filter: blur(4px);
+  width: 310px;
+  height: 255px;
+  margin-top: 1px;
+  align-self: center;
+  padding: auto;
 }

@@ -30,12 +30,32 @@
 
     <div class="container"> 
         <div class="div-1" data-tilt>
-            <h2>BACATA, In Nativ</h2>
-            <h3>Average of 2,640 meters (8,660 ft) above sea level. </h3>
-            <p>Bogotá was founded as the capital of the New Kingdom of Granada on 6 August 1539 by Spanish conquistador Gonzalo Jiménez de Quesada after a harsh expedition into the Andes conquering the Muisca, the indigenous inhabitants of the Altiplano. </p>
+            
+            <form id="form">
+                <div class="mb-3">
+                  <label for="subject" class="form-label"><h3>Subject</h3></label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="subject"
+                    name="subject"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label"><h3>Message</h3></label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="16"
+                    name="message"
+                  ></textarea>
+                </div>
+    
+                <button type="submit" class="send"><h3>Send</h3></button>
+            </form> 
         </div>
     </div>
-    
+
     <div class="container">
         <div class="step" alt="">
             <form id="form">
