@@ -57,6 +57,46 @@ h3, p, a{
 }
 
 
+.welcome {
+  text-align: center;
+  color: blue;
+  margin-top: 15px;
+  font-size: 18px;
+}
+.container {
+  text-align: center;
+  display: flex;
+  margin: 0 auto;
+  place-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.container .div-1 h2 {
+  color: rgba(255, 0, 0, 0.851);
+  margin-top: 6px;
+  font-size: 21px;
+}
+.container .div-1 h3 {
+  font-size: 18px;
+}
+.container .div-1 p {
+  font-size: 15px;
+}
+
+.div-1 {
+  border: 3px solid rgba(61, 12, 209, 0.411);
+  border-radius: 16px;
+  box-shadow:0 4px 30px rgba(0, 0,0, 0.1);
+  backdrop-filter: blur(4px);
+  width: 310px;
+  height: 255px;
+  margin-top: 1px;
+  align-self: center;
+  padding: auto;
+}
+
+
+
 /*=============== FOOTER ===============*/
 
 .footer{
