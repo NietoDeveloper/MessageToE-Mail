@@ -1,19 +1,13 @@
-
-
-
-
-
-
 .welcome {
   text-align: center;
   color: blue;
-  margin-top: 15px;
+  margin-top: 50px;
   font-size: 18px;
 }
 .container {
   text-align: center;
   display: flex;
-  margin: 0 auto;
+  margin-top: 50px;
   place-content: center;
   align-items: center;
   justify-content: center;
@@ -34,9 +28,9 @@
   border: 3px solid rgba(61, 12, 209, 0.411);
   border-radius: 16px;
   box-shadow:0 4px 30px rgba(0, 0,0, 0.1);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(2px);
   width: 310px;
-  height: 255px;
+  height: 430px;
   margin-top: 1px;
   align-self: center;
   padding: auto;
