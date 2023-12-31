@@ -12,13 +12,9 @@
     align-items: center;
     justify-content: center;
 }
-.card .div-1 h2 {
-    color: rgba(255, 0, 0, 0.851);
-    margin-top: 6px;
-    font-size: 21px;
-}
 .card .div-1 h3 {
-    font-size: 18px;
+    margin-top: 10px;
+    font-size: 21px;
 }
 .card .div-1 p {
     font-size: 15px;
@@ -30,27 +26,25 @@
     box-shadow:0 4px 30px rgba(0, 0,0, 0.1);
     backdrop-filter: blur(2px);
     width: 310px;
-    height: 480px;
+    height: 510px;
     margin-top: 40px;
     align-self: center;
     padding: auto;
 }
 
-
 .send{
     background-color: blue;
-    width: 170px;
+    width: 190px;
     height: 70px;
-    margin-top: 50px;
+    margin-top: 40px;
     position: relative;
     display: inline-block;
     text-transform: uppercase;
-    
     text-decoration: none;
     overflow: hidden;
     transition: 0.0010s;
 }
-@media(min-width: 340px) {
+@media(min-width: 320px) {
     .send{
         font-size: 30px;
     }
@@ -59,10 +53,13 @@
 .send:hover{
     color: var(--blue);
     background: #80c0f5;
-    box-shadow: 0 0 10px #58adf1,
-                0 0 40px #58adf1,
-                0 0 80px #58adf1;
-                transition-delay: 0.5s;
+    box-shadow: 0 0 90px #58adf1,
+                0 0 110px #58adf1,
+                0 0 140px #58adf1;
+                transition-delay: 0.4s;
+}
+.send:hover h3 {
+    color: greenyellow;
 }
 
 .send span{

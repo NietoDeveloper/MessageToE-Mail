@@ -53,7 +53,7 @@ body {
   background-attachment: fixed;
 }
 
-h1, h2, h3 {
+h1, h2 {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
 }
