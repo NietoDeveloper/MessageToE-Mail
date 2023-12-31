@@ -49,6 +49,7 @@
     }
 
 .send{
+    cursor: pointer;
     background-color: blue;
     width: 160px;
     height: 40px;
@@ -61,7 +62,8 @@
     transition: 0.0010s;
 }
 .send h3 {
-    font-size: 20px;
+    font-size: 18px;
+    font-family: 'Exo', sans-serif;
 }
 
 .send:hover{
@@ -72,6 +74,14 @@
                 0 0 140px #58adf1;
                 transition-delay: 0.4s;
 }
+    @media screen and (min-width: 720px) {
+            .send:hover {
+                box-shadow: 0 0 120px #58adf1,
+                0 0 150px #58adf1,
+                0 0 190px #58adf1;
+
+            }
+        }
 .send:hover h3 {
     color: greenyellow;
     font-size: 25px;
