@@ -28,7 +28,7 @@
     border: 1px solid rgba(61, 12, 209, 0.411);
     border-radius: 16px;
     box-shadow:0 4px 30px rgba(0, 0,0, 0.1);
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(2px);
     width: 310px;
     height: 480px;
     margin-top: 40px;
@@ -38,6 +38,7 @@
 
 
 .send{
+    background-color: blue;
     width: 170px;
     height: 70px;
     margin-top: 50px;
@@ -61,7 +62,7 @@
     box-shadow: 0 0 10px #58adf1,
                 0 0 40px #58adf1,
                 0 0 80px #58adf1;
-                transition-delay: 0.6s;
+                transition-delay: 0.5s;
 }
 
 .send span{
