@@ -1,13 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600&display=swap");
 
 :root {
+
+  /*========== My Custom Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: 'Exo', sans-serif;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+
+  /*========== Font weight ==========*/
   --font-medium: 500;
   --font-semi-bold: 600;
 
   /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
+}
+
+@media screen and (min-width: 968px) {
+  :root {
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
 }
 
 
@@ -76,7 +98,7 @@ a {
 /*=============== FOOTER ===============*/
 
 .footer{
-  margin-top: 20px;
+  margin-top: 100px;
   position: relative;
   overflow: hidden;
 }
@@ -134,7 +156,7 @@ a {
   display: flex;
   flex-direction: column;
   row-gap: .7rem;
-  color: rgb(180, 241, 9);
+  color: rgb(188, 255, 4);
   font-size: 17px;
 }
 .footer__links:hover{
@@ -142,7 +164,7 @@ a {
 }
 .footer__link,
 .footer__social-link{
-  color: rgb(180, 241, 9);
+  color: rgb(188, 255, 4);
   transition: .3s;
 }
 .footer__link:hover,
@@ -151,11 +173,11 @@ a {
 }
 .footer__social-link{
   font-size: 50px;
-  margin-left: 70px;
+  margin-left: 80px;
 }
 .footer__copy{
   display: block;
-  margin-top: 4.5rem;
+  margin-top: 4rem;
   text-align: center;
   font-size: 17px;
 }
@@ -164,8 +186,8 @@ color: greenyellow;
 font-size: 14px;
 }
 .footer__dev-link{
-  color: gold;
-  font-size: 20px;
+  color: greenyellow;
+  font-size: 24px;
 }
 .footer__copy,
 .footer__dev-link:hover{
@@ -176,7 +198,7 @@ font-size: 14px;
 
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar{
-  width: 10px;
+  width: 12px;
   background-color: hsl(222, 7%, 28%);
   border-radius: 1px;
 
@@ -195,11 +217,11 @@ font-size: 14px;
   position: fixed;
   right: 10px;
   bottom: -30%;
-  background-color: rgb(180, 241, 9);
+  background-color: rgb(188, 255, 4);
   display: inline-flex;
   padding: .35rem;
   border-radius: .5rem;
-  font-size: .8rem;
+  font-size: .7rem;
   color: var(--white-color);
   z-index: var(--z-tooltip);
   transition: .6s;
@@ -222,15 +244,11 @@ font-size: 14px;
   
 }
 
-
-
 @media screen and (min-width: 770px) {
   .section{
     padding: 7rem 0 2rem;
   }
-  
 
-  
   .footer__container{
     grid-template-columns: repeat(4, max-content);
     justify-content: space-between;
