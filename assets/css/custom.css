@@ -105,6 +105,12 @@
     height: 40px;
     background: linear-gradient(90deg, transparent, greenyellow);
 }
+
+    @media screen and (min-width: 720px) {
+        .send span:nth-child(1) {
+            height: 60px;
+        }
+    }
 .send:hover span:nth-child(1){
     left: 100%;
     transition: 1s;
