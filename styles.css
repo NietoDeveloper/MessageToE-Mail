@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600&display=swap");
 
 :root {
-
-  /*========== My Custom Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: 'Exo', sans-serif;
   --font-medium: 500;
   --font-semi-bold: 600;
@@ -35,7 +32,6 @@ body {
 }
 
 h1, h2 {
-  color: var(--title-color);
   font-weight: var(--font-semi-bold);
 }
 
@@ -80,7 +76,7 @@ a {
 /*=============== FOOTER ===============*/
 
 .footer{
-  margin-top: 60px;
+  margin-top: 20px;
   position: relative;
   overflow: hidden;
 }
