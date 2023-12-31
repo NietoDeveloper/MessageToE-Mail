@@ -137,6 +137,9 @@ a {
   color: rgb(180, 241, 9);
   font-size: 17px;
 }
+.footer__links:hover{
+  color: rgb(206, 6, 6);
+}
 .footer__link,
 .footer__social-link{
   color: rgb(180, 241, 9);
