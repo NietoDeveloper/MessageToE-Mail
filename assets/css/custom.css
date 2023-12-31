@@ -61,29 +61,35 @@
     overflow: hidden;
     transition: 0.0010s;
 }
+    @media screen and (min-width: 720px) {
+        .send {
+            width: 220px;
+            height: 60px;
+        }
+    }
 .send h3 {
     font-size: 18px;
     font-family: 'Exo', sans-serif;
 }
 
 .send:hover{
-    color: var(--blue);
-    background: #80c0f5;
-    box-shadow: 0 0 90px #58adf1,
-                0 0 110px #58adf1,
-                0 0 140px #58adf1;
-                transition-delay: 0.4s;
+  
+    background: rgb(153, 255, 0);
+    box-shadow: 0 0 90px rgb(152, 253, 0),
+                0 0 110px rgb(155, 252, 10),
+                0 0 140px rgb(152, 253, 1);
+                transition-delay: 0.7s;
 }
     @media screen and (min-width: 720px) {
             .send:hover {
-                box-shadow: 0 0 120px #58adf1,
-                0 0 150px #58adf1,
-                0 0 190px #58adf1;
+                box-shadow: 0 0 120px rgb(163, 255, 24),
+                0 0 150px rgb(155, 252, 10),
+                0 0 190px rgb(152, 253, 1);
 
             }
         }
 .send:hover h3 {
-    color: greenyellow;
+    color: rgb(255, 123, 0);
     font-size: 25px;
 }
 
@@ -96,8 +102,8 @@
     top: 0;
     left: -100%;
     width: 100%;
-    height: 10px;
-    background: linear-gradient(90deg, transparent, #2196f3);
+    height: 40px;
+    background: linear-gradient(90deg, transparent, greenyellow);
 }
 .send:hover span:nth-child(1){
     left: 100%;
@@ -106,9 +112,9 @@
 .send span:nth-child(2){
     top: -100%;
     right: 0;
-    width: 2px;
+    width: 50px;
     height: 100%;
-    background: linear-gradient(180deg, transparent, #2196f3);
+    background: linear-gradient(180deg, transparent, greenyellow);
 }
 .send:hover span:nth-child(2){
     left: 100%;
@@ -119,8 +125,8 @@
     bottom: 0;
     right: -100%;
     width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg, transparent, #2196f3);
+    height: 50px;
+    background: linear-gradient(270deg, transparent, greenyellow);
 }
 .send:hover span:nth-child(3){
     left: 100%;
@@ -130,9 +136,9 @@
 .send span:nth-child(4){
     bottom: -100%;
     left: 0;
-    width: 2px;
+    width: 50px;
     height: 100%;
-    background: linear-gradient(270deg, transparent, #2196f3);
+    background: linear-gradient(270deg, transparent, greenyellow);
 }
 .send:hover span:nth-child(4){
     bottom: 100%;
