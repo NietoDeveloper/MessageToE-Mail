@@ -1,9 +1,16 @@
 .welcome {
     text-align: center;
     color: blue;
-    margin-top: 25px;
-    font-size: 18px;
+    margin-top: 20px;
 }
+.welcome h1 {
+    font-size: 30px;
+}
+    @media screen and (min-width: 720px) {
+        .welcome h1 {
+        font-size: 45px;
+        }
+    }
 .card {
     text-align: center;
     display: flex;
@@ -12,12 +19,10 @@
     align-items: center;
     justify-content: center;
 }
-.card .div-1 h3 {
-    margin-top: 10px;
+.card .div-1 h2 {
+    margin-top: 15px;
     font-size: 21px;
-}
-.card .div-1 p {
-    font-size: 15px;
+    margin-bottom: 10px;
 }
   
 .div-1 {
@@ -27,16 +32,17 @@
     backdrop-filter: blur(2px);
     width: 310px;
     height: 510px;
-    margin-top: 40px;
+    margin-top: 20px;
     align-self: center;
     padding: auto;
 }
 
 .send{
+   
     background-color: blue;
-    width: 190px;
-    height: 70px;
-    margin-top: 40px;
+    width: 160px;
+    height: 40px;
+    margin-top: 30px;
     position: relative;
     display: inline-block;
     text-transform: uppercase;
@@ -44,10 +50,8 @@
     overflow: hidden;
     transition: 0.0010s;
 }
-@media(min-width: 320px) {
-    .send{
-        font-size: 30px;
-    }
+.send h3 {
+    font-size: 20px;
 }
 
 .send:hover{
@@ -60,6 +64,7 @@
 }
 .send:hover h3 {
     color: greenyellow;
+    font-size: 24px;
 }
 
 .send span{
