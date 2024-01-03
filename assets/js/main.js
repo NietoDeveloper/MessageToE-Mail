@@ -15,7 +15,8 @@ const sr = ScrollReveal({
 const d = new Date();
 document.getElementById("date").innerHTML = d;
 
-sr.reveal(`.app-main`, {delay: 150}); 
+sr.reveal(`.welcome`, {delay: 100}); 
+sr.reveal(`.card`, {delay: 150}); 
 sr.reveal(`.footer__logo`, {delay: 200}); 
 sr.reveal(`.footer__content`, {interval: 250});
 sr.reveal(`.footer__copy`), {interval: 300};
