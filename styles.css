@@ -69,7 +69,7 @@ a {
 }
 
 .footer {
-  margin-top: 40px;
+  margin-top: 10px;
   position: relative;
   overflow: hidden;
 }
@@ -228,10 +228,8 @@ a {
   color: blue;
 }
 
-/*=============== BREAKPOINTS ===============*/
-/* For small devices */
-@media screen and (max-width: 320px) {
-}
+
+@media screen and (max-width: 320px) {}
 
 @media screen and (min-width: 770px) {
   .section {
