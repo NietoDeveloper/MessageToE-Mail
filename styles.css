@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600&display=swap");
 
 :root {
-  --body-font: 'Exo', sans-serif;
+  --body-font: "Exo", sans-serif;
   --font-medium: 500;
   --font-semi-bold: 600;
 
@@ -9,7 +9,6 @@
   --z-tooltip: 10;
   --z-fixed: 100;
 }
-
 
 * {
   box-sizing: border-box;
@@ -31,7 +30,8 @@ body {
   background-attachment: fixed;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-weight: var(--font-semi-bold);
 }
 
@@ -43,10 +43,6 @@ a {
   text-decoration: none;
 }
 
-
-
-
-/*=============== MY REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 1024px;
   margin-right: 1.5rem;
@@ -72,191 +68,207 @@ a {
   overflow: hidden;
 }
 
-
-/*=============== FOOTER ===============*/
-
-.footer{
-  margin-top: 100px;
+.footer {
+  margin-top: 40px;
   position: relative;
   overflow: hidden;
 }
+
 .footer .shape__big,
-.footer .shape__small{
+.footer .shape__small {
   position: absolute;
 }
-.footer .shape__big{
+
+.footer .shape__big {
   width: 300px;
   height: 300px;
   top: 6rem;
   left: -12rem;
 }
-.footer .shape__small{
+
+.footer .shape__small {
   right: -13rem;
   bottom: -6rem;
 }
-.footer__container{
+
+.footer__container {
   row-gap: 2.5rem;
   position: relative;
 }
-.footer__logo{
+
+.footer__logo {
   display: inline-flex;
   align-items: center;
-  column-gap: .25rem;
+  column-gap: 0.25rem;
   color: var(--title-color);
   font-size: var(--h2-font-size);
   font-weight: var(--font-semi-bold);
   margin-bottom: 1.35rem;
-  transition: .3s;
+  transition: 0.3s;
 }
-.footer__logo{
+
+.footer__logo {
   font-size: 26px;
   color: blue;
 }
-.footer__logo:hover{
+
+.footer__logo:hover {
   color: red;
 }
+
 .footer__description {
   color: blue;
   font-size: 18px;
   margin-left: 35px;
 }
-.footer__logo i{
+
+.footer__logo i {
   font-size: 1.5rem;
   font-weight: 500;
 }
-.footer__title{
+
+.footer__title {
   margin-left: 30px;
   font-size: 18px;
   margin-bottom: 1.1rem;
   color: blue;
 }
-.footer__links{
+
+.footer__links {
   display: flex;
   flex-direction: column;
-  row-gap: .7rem;
+  row-gap: 0.7rem;
   color: rgb(188, 255, 4);
   font-size: 17px;
 }
-.footer__links:hover{
+
+.footer__links:hover {
   color: rgb(206, 6, 6);
 }
+
 .footer__link,
-.footer__social-link{
+.footer__social-link {
   color: rgb(188, 255, 4);
-  transition: .3s;
+  transition: 0.3s;
 }
+
 .footer__link:hover,
-.footer__social-link:hover{
+.footer__social-link:hover {
   color: rgb(206, 6, 6);
 }
-.footer__social-link{
+
+.footer__social-link {
   font-size: 50px;
   margin-left: 80px;
 }
-.footer__copy{
+
+.footer__copy {
   display: block;
   margin-top: 4rem;
   text-align: center;
   font-size: 17px;
 }
+
 .footer__copy p {
-color: greenyellow;
-font-size: 14px;
+  color: greenyellow;
+  font-size: 14px;
 }
-.footer__dev-link{
+
+.footer__dev-link {
   color: greenyellow;
   font-size: 24px;
 }
+
 .footer__copy,
-.footer__dev-link:hover{
+.footer__dev-link:hover {
   color: red;
-  transition: .3s;
-  animation: a 3s infinite; 
+  transition: 0.3s;
+  animation: a 3s infinite;
 }
 
 /*=============== SCROLL BAR ===============*/
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 12px;
   background-color: hsl(222, 7%, 28%);
   border-radius: 1px;
-
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background-color: silver;
   border-radius: 1px;
 }
-::-webkit-scrollbar-thumb:hover{
+
+::-webkit-scrollbar-thumb:hover {
   background-color: black;
 }
 
 /*=============== SCROLL UP ===============*/
-.scrollup{
+.scrollup {
   position: fixed;
   right: 10px;
   bottom: -30%;
   background-color: rgb(188, 255, 4);
   display: inline-flex;
-  padding: .35rem;
-  border-radius: .5rem;
-  font-size: .7rem;
+  padding: 0.35rem;
+  border-radius: 0.5rem;
+  font-size: 0.7rem;
   color: var(--white-color);
   z-index: var(--z-tooltip);
-  transition: .6s;
+  transition: 0.6s;
 }
-.scrollup:hover{
+
+.scrollup:hover {
   transform: translateY(-1rem);
 }
 
-
 /* Show Scroll Up*/
 
-.show-scroll{
+.show-scroll {
   bottom: 3rem;
   color: blue;
 }
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 320px){
-  
+@media screen and (max-width: 320px) {
 }
 
 @media screen and (min-width: 770px) {
-  .section{
+  .section {
     padding: 7rem 0 2rem;
   }
 
-  .footer__container{
+  .footer__container {
     grid-template-columns: repeat(4, max-content);
     justify-content: space-between;
+  }
 
+  .footer__logo {
+    column-gap: 0.5rem;
   }
-  .footer__logo{
-    column-gap: .5rem;
-  }
-  .footer__logo i{
+
+  .footer__logo i {
     font-size: 2rem;
   }
-  .footer__title{
+
+  .footer__title {
     margin-bottom: 1.5rem;
   }
-  .footer__link{
-    row-gap: .76rem;
+
+  .footer__link {
+    row-gap: 0.76rem;
   }
-  .footer__social-link{
+
+  .footer__social-link {
     font-size: 50px;
   }
-  .footer__copy{
+
+  .footer__copy {
     margin-top: 8rem;
     padding-bottom: 0.6rem;
   }
 
-  .scrollup{
+  .scrollup {
     right: 3rem;
   }
 }
-
-
-
-
